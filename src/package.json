@@ -1,0 +1,5 @@
+{
+    "sass": "sass src/styles.scss dist/styles.css --watch"
+  }
+
+  
