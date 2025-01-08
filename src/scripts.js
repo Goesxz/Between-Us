@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     cloud.style.animationDuration = `${10 + Math.random() * 10}s`;
     cloud.style.animation = `moveClouds ${15 + Math.random() * 5}s linear`;
     
-    
-    
     cloud.addEventListener('animationend', () => {
       cloud.remove();
     });
@@ -37,42 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Observe all fade-in elements
   document.querySelectorAll('.fade-in').forEach(element => {
     fadeObserver.observe(element);
-  });
-
-  // Smooth scroll for navigation links
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
-      
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-
-  // Hide/Show navigation on scroll
-  let lastScrollTop = 0;
-  const nav = document.querySelector('nav');
-  const scrollThreshold = 50;
-
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (Math.abs(scrollTop - lastScrollTop) > scrollThreshold) {
-      if (scrollTop > lastScrollTop && scrollTop > nav.offsetHeight) {
-        // Scrolling down
-        nav.classList.add('nav-scrolled');
-      } else {
-        // Scrolling up
-        nav.classList.remove('nav-scrolled');
-      }
-      lastScrollTop = scrollTop;
-    }
   });
 
   // Love Counter
@@ -161,9 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     playlistSection.appendChild(spotifyEmbed);
   }
-});
 
-document.addEventListener('DOMContentLoaded', () => {
   // Constantes de configuração
   const CLOUD_CREATION_INTERVAL = 3500; // Intervalo para criar nuvens
   const MIN_CLOUD_DURATION = 10; // Duração mínima da animação (em segundos)
