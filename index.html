@@ -14,40 +14,48 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet">
- 
   <link rel="stylesheet" href="dist/styles.css">
   <title>Between Us - Nossos Momentos</title>
 </head>
 
 <body>
   <header class="fade-in">
-    <h1>Between Us</h1>
+    <h1 class="text-center">Between Us</h1>
   </header>
 
-  <nav class="fade-in">
-    <ul>
-      <li><a href="#historias" class="nav-link">Memories</a></li>
-      <li><a href="#playlists" class="nav-link">Playlists</a></li>
-      <li><a href="#galeria" class="nav-link">Moments</a></li>
-    </ul>
+  <nav class="fade-in navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Between Us</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#historias" class="nav-link">Memories</a></li>
+          <li class="nav-item"><a href="#playlists" class="nav-link">Playlists</a></li>
+          <li class="nav-item"><a href="#galeria" class="nav-link">Moments</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="love-counter">
+  <div class="love-counter text-center">
     <h3>Ten Thousand Moments, One Love</h3>
-    <div class="counter-container">
-      <div class="counter-item">
+    <div class="counter-container row justify-content-center">
+      <div class="counter-item col-3">
         <span id="days">0</span>
-        <p>Dayes</p>
+        <p>Days</p>
       </div>
-      <div class="counter-item">
+      <div class="counter-item col-3">
         <span id="hours">0</span>
         <p>Hours</p>
       </div>
-      <div class="counter-item">
+      <div class="counter-item col-3">
         <span id="minutes">0</span>
         <p>Minutes</p>
       </div>
-      <div class="counter-item">
+      <div class="counter-item col-3">
         <span id="seconds">0</span>
         <p>Seconds</p>
       </div>
@@ -62,46 +70,24 @@
         <h3>Rocket Farm</h3>
         <p>Eu lembro que era dia 26 de julho e estávamos conversando sentados em uma pedra, e teve um momento em que
           você
-          questionou o motivo de eu gostar justamente de ti. Eu lembro que te olhei e na minha cabeça o motivo estava
-          claro, mas na sua não, e eu te disse "é porque você fez por mim o que nenhuma outra já fez". Ali eu me sentia
-          realizado por ter falado aquilo, senti uma paz absurda e é a mesma paz quando estou contigo. Hoje eu creio que
-          podemos compartilhar momentos juntos, mas o que me deixa mais feliz é saber que você antes de todas as coisas
-          se tornou uma amiga para mim. Eu sou muito grato pela tua amizade, muito grato pelos momentos e por ter
-          dividido momentos tão especiais comigo.</p>
+          questionou o motivo de eu gostar justamente de ti...</p>
       </article>
     </section>
 
     <section>
-
       <h2>Teachings</h2>
       <h3>My favorite passage</h3>
       <h5>Mateus 14:22-33</h5>
-      <p>Pedro estava passando por dificuldades e problemas e tinha perdido sua fé, porém eu sei que tinha quem orava
-        por ele e quem estava com ele mesmo nas dificuldades. Jesus, mesmo sabendo do seu medo e fraqueza, nunca o
-        abandonou. Ele orou por Pedro para que sua fé não se perdesse e, ao se recuperar, ele poderia fortalecer os
-        irmãos. Esse momento é um lembrete poderoso de que, por mais que possamos duvidar ou sentir que estamos
-        sozinhos, há sempre alguém intercedendo por nós, e Deus nunca deixa de nos estender Sua mão, mesmo nas
-        tempestades da vida. E, como Jesus fez por Pedro, Ele também faz por nós, nos oferecendo uma chance de recomeçar
-        e ser renovados em nossa fé. Vejo que tivemos essa oportunidade de recomeçar, mas falando de nós,sabe? então
-        dessa vez eu não quero focar no que as pessoas pensam ou no que falam. Eu quero focar na gente e Deus sendo a
-        nossa base.
-      </p>
-
+      <p>Pedro estava passando por dificuldades e problemas e tinha perdido sua fé...</p>
     </section>
 
     <section id="playlists" class="fade-in">
       <h2>Eternal Rhythms</h2>
       <article>
         <h3>Forever in Tune</h3>
-        <p>Criei essa playlist para que a gente possa compartilhar nossos gostos e tipos. Espero que tu goste da ideia.
-        </p>
-        <p>Música para mim sempre foi algo que me inspirava, então eu quis compartilhar esse momento contigo, dividir
-          algo que eu gosto de fazer com quem eu gosto. Música para mim é arte, sentimento, expressão e são coisas que a
-          gente já viveu...</p>
+        <p>Criei essa playlist para que a gente possa compartilhar nossos gostos...</p>
         <a href="https://open.spotify.com/playlist/6aRD1oTlnvBCEDUDvtGrj7" target="_blank" rel="noopener noreferrer"
-          class="btn">
-          Ouça nossa Playlist
-        </a>
+          class="btn btn-primary">Ouça nossa Playlist</a>
       </article>
     </section>
 
@@ -113,31 +99,30 @@
       <span class="heart">♥</span>
     </div>
 
-
     <section id="galeria" class="fade-in">
       <div id="memoriesCarousel" class="carousel slide" data-bs-ride="carousel">
         <h2>Our Timeline</h2>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
-              <img src="img/2b17e40f-28d8-4450-aa34-ef7aa0a6afd8.jpg" class="imagem-carrossel" alt="Memory 1"
+              <img src="img/2b17e40f-28d8-4450-aa34-ef7aa0a6afd8.jpg" class="imagem-carrossel img-fluid" alt="Memory 1"
                 loading="lazy">
-              <img src="img/9336f86d-26a2-4fa0-8e67-5febacc0972c.jpg" class="imagem-carrossel" alt="Memory 2"
+              <img src="img/9336f86d-26a2-4fa0-8e67-5febacc0972c.jpg" class="imagem-carrossel img-fluid" alt="Memory 2"
                 loading="lazy">
-              <img src="img/image.png" class="imagem-carrossel" alt="Memory 3" loading="lazy">
-              <img src="img/205c69bf-2d06-4815-a190-31671355a088.jpg" class="imagem-carrossel" alt="Memory 4"
+              <img src="img/image.png" class="imagem-carrossel img-fluid" alt="Memory 3" loading="lazy">
+              <img src="img/205c69bf-2d06-4815-a190-31671355a088.jpg" class="imagem-carrossel img-fluid" alt="Memory 4"
                 loading="lazy">
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-flex">
-              <img src="img/35f20d55-4413-4d18-b95e-59a2cb4ddc6f.jpg" class="imagem-carrossel" alt="Memory 5"
+              <img src="img/35f20d55-4413-4d18-b95e-59a2cb4ddc6f.jpg" class="imagem-carrossel img-fluid" alt="Memory 5"
                 loading="lazy">
-              <img src="img/abe57d74-912e-4196-bba5-3f4792d54e94.jpg" class="imagem-carrossel" alt="Memory 6"
+              <img src="img/abe57d74-912e-4196-bba5-3f4792d54e94.jpg" class="imagem-carrossel img-fluid" alt="Memory 6"
                 loading="lazy">
-              <img src="img/5eb97212-5766-47d9-bc53-649dd2c3204a.jpg" class="imagem-carrossel" alt="Memory 7"
+              <img src="img/5eb97212-5766-47d9-bc53-649dd2c3204a.jpg" class="imagem-carrossel img-fluid" alt="Memory 7"
                 loading="lazy">
-              <img src="img/af4d018a-9d71-4fdc-b148-cc3bab727202.jpg" class="imagem-carrossel" alt="Memory 8"
+              <img src="img/af4d018a-9d71-4fdc-b148-cc3bab727202.jpg" class="imagem-carrossel img-fluid" alt="Memory 8"
                 loading="lazy">
             </div>
           </div>
@@ -154,13 +139,12 @@
     </section>
   </main>
 
-  <footer class="fade-in">
+  <footer class="fade-in text-center">
     <p>Feito com <span class="heart">❤️</span> por Luis Góes</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="src/scripts.js"></script>
-  
 </body>
 
 </html>
